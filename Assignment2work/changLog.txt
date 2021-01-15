@@ -1,0 +1,63 @@
+SIT 305: Assignment 2 - Chat App
+
+23/05/2020:
+ - Connecting the chat app to firebase server
+- Login and signup function
+- Authenticate users by verifying user email
+24/05/2020:
+- Forget password function and reset password
+25/05/2020:
+- Stay sign in if user do not log out
+- Save user data in firestorm in firebase
+26/05/2020:
+- change profile image
+- create user profile UI
+- display user information retrieved from firebase server
+27/05/2020:
+- change UI colour for login signup and homepage UI
+- create searching friend list
+- Create recycle view list
+28/05/2020
+- send adding friend requests and canceling friend request
+29/05/2020
+- accept friend request and display on friend list document
+- firebase delete request document and store new friend in Friend List folder
+30/05/2020
+- display only friend request from other user
+- create Chat UI
+31/05/2020
+-record message send and save in firebase server 
+-display message of sender and receiver on chat screen
+- fix bugging
+01/06/2020
+- fix button
+- fix back button to come back previous activity not the default previous activity
+-write comment for every function
+08/06/2020
+- change login UI, Register UI, ForgetPassword UI
+- create online status
+- fixing bug
+09/06/2020
+- Sending image in chat
+- Create time and date for message
+- Receive image in chat layout
+- Same image in Storage FireBase
+10/06/2020
+- send file pdf and docx.
+- save in firebase storage
+11/06/2020
+- delete message function
+- delete image function
+- comment line for source code
+12/06/2020
+-Display latest message to Homepage
+13/06/2020
+- display message have not been seen by receiver
+- get File PDF name and display in message Adapter
+15/06/2020
+- create QR code for user
+- Search friend using QR code
+- Change User profile UI
+16/06/2020
+- Build up gallery for each user
+- privacy if users do not want to share with anyone else

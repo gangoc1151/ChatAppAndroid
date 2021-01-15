@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendProfile">
+    <Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_to_friendlist"
+                android:src="@drawable/backbutton" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+    </Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/coverimage"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/image_profile_custom"
+        android:padding="3dp"/>
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_toEndOf="@+id/friendImage"
+        android:layout_marginStart="45dp"
+        android:textSize="25sp"
+        android:layout_below="@+id/toolbar"
+        android:textStyle="bold"
+        android:textColor="#eeeeee"/>
+
+
+    <TextView
+        android:id="@+id/friend_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/friendImage"
+        android:layout_below="@+id/friend_name"
+
+        android:textSize="15sp"
+        android:layout_marginStart="45dp"
+        android:textStyle="italic"
+        android:textColor="#eeeeee"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/friendImage"
+        android:id="@+id/tablayout"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:id="@+id/setting"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:id="@+id/gallery"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpaper"
+        android:layout_below="@+id/tablayout"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make friend with me and have a cool conversation together"
+        android:layout_below="@+id/friendImage"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/status"/>
+
+</RelativeLayout>
